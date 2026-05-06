@@ -1,10 +1,21 @@
 # Viktoria Ferstl
 
-Hi! I'm Viky, a TypeScript-focused Software Engineer from Austria.
+Hi! I’m Viky, a Software Engineer from Austria working mostly with TypeScript. I care about building accessible, thoughtful web experiences and enjoy supporting aspiring developers as they grow.
+
+Outside of coding, I’m usually at a cozy café with friends, travelling, taking photos, boxing, or keeping my plants alive (most of the time).
 
 This repository showcases selected software projects and engineering contributions, with a focus on full-stack architecture, integration work, and product-oriented delivery.
 
-## Table of contents
+## Personal Projects
+
+Fun little side projects I'm always working on – they're not perfect, but that's half the fun. ✨
+
+| Project | Description | Year |
+|---|---|---|
+| [Vinyl Record Collection](#vinyl-record-collection) | Modern web app for a personal vinyl collection and wishlist with Contentful CMS and Discogs integration. | 2025 |
+| [Photos Portfolio](#photos-portfolio) | Modern photo portfolio application that aggregates and displays photos from Pixelfed in a responsive gallery layout with RSS feed generation. | 2025 |
+
+## Professional Projects
 
 | Project | Description | Year | Company |
 |---|---|---|---|
@@ -13,6 +24,82 @@ This repository showcases selected software projects and engineering contributio
 | [HR Docs](#hr-docs) | HR documentation system with contract automation, e-signature workflows, and enterprise integrations. | 2024 | functn GmbH |
 | [Energiegemeinschaften](#energiegemeinschaften) | Energy community platform built as a multi-app Nx monorepo with onboarding and sync services. | 2023 | functn GmbH |
 | [Heylog Application](#heylog-application) | Logistics SaaS platform for delivery coordination, messaging and real-time order management. | 2023 | functn GmbH |
+
+## Vinyl Record Collection
+
+A web application showcasing my personal vinyl record collection, built with cutting-edge Next.js technologies and integrated with a headless CMS for dynamic content management.
+
+**Live Demo:** https://records.viky.at/
+**Repository:** https://github.com/fviktoria/vinyl-collection
+
+### Tech Stack
+- **Frontend Framework:** Next.js 16 (App Router) with Server Components
+- **Language:** TypeScript
+- **UI Library:** Chakra UI with Emotion
+- **Styling:** Tailwind CSS
+- **CMS:** Contentful (content management and rich media handling)
+- **External API:** Discogs API (album metadata, covers, artist information)
+- **Caching:** Upstash Redis (performance optimization)
+- **Internationalization:** next-intl (multi-language support)
+- **Animations:** Framer Motion
+- **Components:** Splide (carousel/slider functionality)
+- **Development Tools:** ESLint, TypeScript strict mode
+
+### Key Features
+- **Dual Collection Views:** Browse vinyl records in responsive grid and list layouts
+- **Collection Management:** Organized display of owned albums with detailed metadata
+- **Discogs Integration:** Automated album data retrieval (covers, artist information, release details) from Discogs API
+- **Internationalization:** Full support for English and German language interfaces with locale-based routing
+- **Responsive Design:** Fully responsive interface with adaptive layouts for all screen sizes
+- **Album Cards:** Reusable component system with dynamic display variants (grid/list)
+
+### Architecture Highlights
+- **Server-Side Data Fetching:** Leverages Next.js server components for efficient content delivery
+- **Content-Driven Layout:** Dynamic routing based on locale configuration with middleware
+- **Type-Safe Content:** Generated TypeScript types from Contentful schema
+- **Component Composition:** Modular component architecture with separated concerns (album cards, carousel, layout)
+- **Environment Configuration:** Secure API key management with environment-based configuration
+- **Custom Middleware:** Locale detection and routing middleware for seamless multi-language experience
+
+This project demonstrates expertise in **modern React development**, **headless CMS integration**, **API data fetching**, **internationalization**, **performance optimization**, and **building production-ready applications** with Next.js.
+
+## Photos Portfolio
+
+A modern photo portfolio application that aggregates and displays photos from Pixelfed in a responsive gallery layout with RSS feed generation.
+
+**Live Demo:** https://photos.viky.at
+**Repository:** https://github.com/fviktoria/photos
+
+### Tech Stack
+- **Frontend Framework:** Next.js 15 (App Router, Turbopack)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS, CSS Modules
+- **External APIs:** Pixelfed (photo aggregation and display)
+- **RSS Generation:** RSS library for feed generation
+- **Development Tools:** ESLint, PostCSS
+
+### Key Features & Contributions
+
+- **Pixelfed Integration:** Implemented API client to fetch photos from Pixelfed accounts with secure token-based authentication and error handling
+- **Responsive Photo Gallery:** Built a masonry grid layout that dynamically adjusts columns based on screen size (1, 2, or 3 columns)
+- **Custom Masonry Hook:** Developed `useMasonry` hook to calculate and apply dynamic row spacing for perfectly aligned image columns
+- **Image Display Component:** Created reusable PixelfedMedia component to render media with captions and proper image dimensions
+- **RSS Feed Generation:** Implemented automatic RSS feed generation from Pixelfed posts for content syndication (updates on every page build)
+- **Server-Side Rendering:** Utilized Next.js server components to fetch data on the server, reducing client-side bundle size
+- **Responsive Header & Navigation:** Designed responsive header component with branding and mobile-friendly navigation
+- **Component Architecture:** Built modular, reusable components (Container, Header, Footer, Links) with consistent styling
+- **Type Safety:** Implemented TypeScript throughout with custom types for Pixelfed API responses
+
+### Project Highlights
+
+This project demonstrates expertise in:
+- **Modern Next.js Development:** Server-side data fetching with async components, optimized rendering strategy
+- **External API Integration:** Secure API client implementation with proper authentication and error handling
+- **Responsive Design:** Mobile-first CSS Grid and Tailwind CSS for adaptive layouts across devices
+- **Client-Side Interactivity:** React hooks and refs for DOM manipulation and dynamic calculations
+- **Performance Optimization:** Strategic use of server vs. client components and static generation
+- **TypeScript & Type Safety:** End-to-end TypeScript implementation for maintainable code
+- **Component Reusability:** Well-structured, composable components with clear separation of concerns
 
 ## Internal Sync / Time Tracking tool
 
