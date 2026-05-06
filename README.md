@@ -283,7 +283,7 @@ A modern energy community platform for an electricity provider, built as an Nx m
 Built an MVP for a comprehensive logistics management platform with integrated messaging capabilities for
 coordinating deliveries and managing driver communications.
 
-https://heylog.com/
+https://heylog.com/features
 
 ### Tech Stack
 
