@@ -19,6 +19,7 @@ Fun little side projects I'm always working on – they're not perfect, but that
 
 | Project | Description | Year | Company |
 |---|---|---|---|
+| [Business Flow](#business-flow) | | 2026 | Dynatrace |
 | [Internal Sync / Time Tracking tool](#internal-sync--time-tracking-tool) | Full-stack Nx platform for time tracking and automated synchronization across Wrike, Personio, Runn and internal reporting. | 2025 | functn GmbH |
 | [Birdlife Website](#birdlife-website) | Public-facing Contentful website for editorial content, wildlife stories and event presentation. | 2024 | functn GmbH |
 | [HR Docs](#hr-docs) | HR documentation system with contract automation, e-signature workflows, and enterprise integrations. | 2024 | functn GmbH |
@@ -100,6 +101,33 @@ This project demonstrates expertise in:
 - **Performance Optimization:** Strategic use of server vs. client components and static generation
 - **TypeScript & Type Safety:** End-to-end TypeScript implementation for maintainable code
 - **Component Reusability:** Well-structured, composable components with clear separation of concerns
+
+## Business Flow
+
+A business observability application within the Dynatrace Platform, developed as part of Dynatrace – an observability and application performance monitoring platform that provides monitoring, analytics, automation, and AI-powered insights for cloud and enterprise systems. The Business Flow app enables users to model, visualize, and analyze business processes and their related telemetry data directly within the Dynatrace ecosystem.
+
+[Business Flow Documentation](https://docs.dynatrace.com/docs/observe/business-observability/business-flow)￼
+
+### Tech Stack
+
+- **Frontend Framework:** React
+- **Language:** TypeScript
+- **State Management:** Zustand
+- **Visualization & Graph UI:** React Flow
+- **UI Framework:** Strato (Dynatrace design system and component library)
+- **Query Language:** DQL (Dynatrace Query Language)
+- **Platform Integration:** Dynatrace App SDKs and platform APIs
+- **Testing**: Playwright, Jest
+- **Tooling**: ESLint
+
+### Key Contributions
+
+- Frontend development: Contributed to the development of a business observability application within the Dynatrace platform, implementing interactive UI features and platform-integrated workflows in React and TypeScript.
+- Platform integration: Integrated Dynatrace platform SDKs and APIs for data fetching, query execution, and application-level platform functionality.
+- State management and UI architecture: Worked with Zustand-based state handling and reusable frontend patterns to support complex UI interactions and data-driven application behavior.
+- Query-driven functionality: Implemented frontend features powered by DQL, enabling users to retrieve, filter, and analyze observability data within the application.
+- Design system adoption: Developed and refined user interfaces using Strato, ensuring consistency with Dynatrace platform UX and accessibility standards.
+- Collaboration within platform ecosystem: Contributed to applications that operate as part of the broader Dynatrace platform architecture, working within shared platform conventions, SDKs, and cross-team frontend patterns.
 
 ## Internal Sync / Time Tracking tool
 
