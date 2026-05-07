@@ -106,7 +106,7 @@ This project demonstrates expertise in:
 
 A business observability application within the Dynatrace Platform, developed as part of Dynatrace – an observability and application performance monitoring platform that provides monitoring, analytics, automation, and AI-powered insights for cloud and enterprise systems. The Business Flow app enables users to model, visualize, and analyze business processes and their related telemetry data directly within the Dynatrace ecosystem.
 
-[Business Flow Documentation](https://docs.dynatrace.com/docs/observe/business-observability/business-flow)￼
+[Business Flow Documentation](https://docs.dynatrace.com/docs/observe/business-observability/business-flow)
 
 ### Tech Stack
 
