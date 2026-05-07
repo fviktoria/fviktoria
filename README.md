@@ -19,7 +19,7 @@ Fun little side projects I'm always working on – they're not perfect, but that
 
 | Project | Description | Year | Company |
 |---|---|---|---|
-| [Business Flow](#business-flow) | | 2026 | Dynatrace |
+| [Business Flow](#business-flow) | Business observability app within the Dynatrace platform, focused on flow-based process visualization and telemetry analysis using React, TypeScript, React Flow, Zustand, and DQL. | 2026 | Dynatrace |
 | [Internal Sync / Time Tracking tool](#internal-sync--time-tracking-tool) | Full-stack Nx platform for time tracking and automated synchronization across Wrike, Personio, Runn and internal reporting. | 2025 | functn GmbH |
 | [Birdlife Website](#birdlife-website) | Public-facing Contentful website for editorial content, wildlife stories and event presentation. | 2024 | functn GmbH |
 | [HR Docs](#hr-docs) | HR documentation system with contract automation, e-signature workflows, and enterprise integrations. | 2024 | functn GmbH |
