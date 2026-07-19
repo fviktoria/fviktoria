@@ -66,41 +66,39 @@ This project demonstrates expertise in **modern React development**, **headless 
 
 ## Photos Portfolio
 
-A modern photo portfolio application that aggregates and displays photos from Pixelfed in a responsive gallery layout with RSS feed generation.
+A photo portfolio application built with Next.js and a headless CMS, displaying photography work in an album-based gallery with lightbox viewing, tag filtering, and full SEO support.
 
-**Live Demo:** https://photos.viky.at
-**Repository:** https://github.com/fviktoria/photos
+**Live Demo:** https://photos.viky.at · **Repository:** https://github.com/fviktoria/photos.viky.at
 
 ### Tech Stack
-- **Frontend Framework:** Next.js 15 (App Router, Turbopack)
+
+- **Frontend Framework:** Next.js 16 (App Router, Static Export)
 - **Language:** TypeScript
-- **Styling:** Tailwind CSS, CSS Modules
-- **External APIs:** Pixelfed (photo aggregation and display)
-- **RSS Generation:** RSS library for feed generation
-- **Development Tools:** ESLint, PostCSS
+- **Styling:** Tailwind CSS v4
+- **CMS:** Contentful (headless CMS for photo and album management)
+- **Libraries:** PhotoSwipe (lightbox), react-masonry-css (responsive grid)
 
 ### Key Features & Contributions
 
-- **Pixelfed Integration:** Implemented API client to fetch photos from Pixelfed accounts with secure token-based authentication and error handling
-- **Responsive Photo Gallery:** Built a masonry grid layout that dynamically adjusts columns based on screen size (1, 2, or 3 columns)
-- **Custom Masonry Hook:** Developed `useMasonry` hook to calculate and apply dynamic row spacing for perfectly aligned image columns
-- **Image Display Component:** Created reusable PixelfedMedia component to render media with captions and proper image dimensions
-- **RSS Feed Generation:** Implemented automatic RSS feed generation from Pixelfed posts for content syndication (updates on every page build)
-- **Server-Side Rendering:** Utilized Next.js server components to fetch data on the server, reducing client-side bundle size
-- **Responsive Header & Navigation:** Designed responsive header component with branding and mobile-friendly navigation
-- **Component Architecture:** Built modular, reusable components (Container, Header, Footer, Links) with consistent styling
-- **Type Safety:** Implemented TypeScript throughout with custom types for Pixelfed API responses
+- **Contentful CMS Integration:** Implemented typed API client with custom content models for photos and albums, including field resolution and image dimension extraction
+- **Responsive Masonry Gallery:** Built a dynamic masonry grid layout that adjusts from 1 to 4 columns across breakpoints using react-masonry-css
+- **Lightbox Viewer:** Integrated PhotoSwipe for full-screen image browsing with metadata display (location, date, description)
+- **Album System:** Designed album-based content structure with dedicated album pages, breadcrumb navigation, and cover image support
+- **Tag Filtering:** Built client-side tag filter component to dynamically show/hide photos without a page reload
+- **Image Optimisation:** Implemented a custom Next.js image loader targeting the Contentful Images API for on-the-fly WebP conversion and responsive resizing, compatible with static export
+- **SEO & Structured Data:** Added JSON-LD structured data (ProfilePage, ImageGallery, Photograph schemas), dynamic sitemap generation, and Open Graph metadata per album
+- **Static Export:** Configured full static export with `generateStaticParams` for all album routes, making the site hostable on any CDN without a Node.js server
 
 ### Project Highlights
 
 This project demonstrates expertise in:
-- **Modern Next.js Development:** Server-side data fetching with async components, optimized rendering strategy
-- **External API Integration:** Secure API client implementation with proper authentication and error handling
-- **Responsive Design:** Mobile-first CSS Grid and Tailwind CSS for adaptive layouts across devices
-- **Client-Side Interactivity:** React hooks and refs for DOM manipulation and dynamic calculations
-- **Performance Optimization:** Strategic use of server vs. client components and static generation
-- **TypeScript & Type Safety:** End-to-end TypeScript implementation for maintainable code
-- **Component Reusability:** Well-structured, composable components with clear separation of concerns
+
+- **Headless CMS Architecture:** Typed Contentful client with custom content models, field mappers, and service layer separation
+- **Static Site Generation:** Next.js static export with dynamic route pre-rendering at build time
+- **Image Performance:** Custom image loader integrating CDN-level resizing, WebP conversion, and correctly-sized `srcset` hints per layout context
+- **SEO Implementation:** Schema.org structured data, dynamic metadata, sitemap, and robots.txt
+- **TypeScript & Type Safety:** End-to-end typed content models from CMS response to UI component props
+- **Component Architecture:** File-naming conventions enforcing single responsibility (`.service.ts`, `.client.ts`, `.mapper.ts`, `.util.ts`)
 
 ## Business Flow
 
