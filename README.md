@@ -13,7 +13,7 @@ Fun little side projects I'm always working on – they're not perfect, but that
 | Project | Description | Year |
 |---|---|---|
 | [Vinyl Record Collection](#vinyl-record-collection) | Modern web app for a personal vinyl collection and wishlist with Contentful CMS and Discogs integration. | 2025 |
-| [Photos Portfolio](#photos-portfolio) | Modern photo portfolio application that aggregates and displays photos from Pixelfed in a responsive gallery layout with RSS feed generation. | 2025 |
+| [Photos Portfolio](#photos-portfolio) | Personal photo portfolio built with Next.js and Contentful CMS, featuring album-based galleries, lightbox viewing, tag filtering, i18n, and full SEO support. | 2025 |
 
 ## Professional Projects
 
@@ -66,9 +66,9 @@ This project demonstrates expertise in **modern React development**, **headless 
 
 ## Photos Portfolio
 
-A photo portfolio application built with Next.js and a headless CMS, displaying photography work in an album-based gallery with lightbox viewing, tag filtering, and full SEO support.
+A photo portfolio application built with Next.js and a headless CMS, displaying photography work in an album-based gallery with lightbox viewing, tag filtering, internationalization, and full SEO support. Deployed as a fully static site on Cloudflare Pages.
 
-**Live Demo:** https://photos.viky.at · **Repository:** https://github.com/fviktoria/photos.viky.at
+**Live Demo:** https://viktoriaferstl.at · **Repository:** https://github.com/fviktoria/viktoriaferstl.at
 
 ### Tech Stack
 
@@ -76,6 +76,8 @@ A photo portfolio application built with Next.js and a headless CMS, displaying 
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS v4
 - **CMS:** Contentful (headless CMS for photo and album management)
+- **Internationalization:** next-intl (English and German)
+- **Deployment:** Cloudflare Pages via Wrangler
 - **Libraries:** PhotoSwipe (lightbox), react-masonry-css (responsive grid)
 
 ### Key Features & Contributions
@@ -86,8 +88,9 @@ A photo portfolio application built with Next.js and a headless CMS, displaying 
 - **Album System:** Designed album-based content structure with dedicated album pages, breadcrumb navigation, and cover image support
 - **Tag Filtering:** Built client-side tag filter component to dynamically show/hide photos without a page reload
 - **Image Optimisation:** Implemented a custom Next.js image loader targeting the Contentful Images API for on-the-fly WebP conversion and responsive resizing, compatible with static export
+- **Internationalization:** Added full English and German support using next-intl with static locale-based routing
 - **SEO & Structured Data:** Added JSON-LD structured data (ProfilePage, ImageGallery, Photograph schemas), dynamic sitemap generation, and Open Graph metadata per album
-- **Static Export:** Configured full static export with `generateStaticParams` for all album routes, making the site hostable on any CDN without a Node.js server
+- **Static Export:** Configured full static export with `generateStaticParams` for all album and locale routes, hosted on Cloudflare Pages without a Node.js server
 
 ### Project Highlights
 
@@ -97,6 +100,7 @@ This project demonstrates expertise in:
 - **Static Site Generation:** Next.js static export with dynamic route pre-rendering at build time
 - **Image Performance:** Custom image loader integrating CDN-level resizing, WebP conversion, and correctly-sized `srcset` hints per layout context
 - **SEO Implementation:** Schema.org structured data, dynamic metadata, sitemap, and robots.txt
+- **Internationalization without a server:** Locale routing via static path generation instead of middleware, compatible with CDN-hosted static exports
 - **TypeScript & Type Safety:** End-to-end typed content models from CMS response to UI component props
 - **Component Architecture:** File-naming conventions enforcing single responsibility (`.service.ts`, `.client.ts`, `.mapper.ts`, `.util.ts`)
 
